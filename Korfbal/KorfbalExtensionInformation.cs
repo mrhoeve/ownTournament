@@ -1,4 +1,4 @@
-﻿using myTournamentExtensionInterfaces.SportExtension;
+﻿using myTournamentExtensionInterfaces.Sport.SportExtension;
 using System;
 using System.IO;
 using System.Reflection;
@@ -7,6 +7,14 @@ namespace Korfbal
 {
     class KorfbalExtensionInformation : ISportExtensionInformation
     {
+        public string Sport
+        {
+            get
+            {
+                return Localisation.strings.sport;
+            }
+        }
+
         public string extensionName
         {
             get
@@ -46,6 +54,13 @@ namespace Korfbal
             {
                 // Get the developers from the Contributors file and return it
                 return readEmbeddedFile("LICENSE");
+            }
+        }
+
+        public string linkToLicense
+        {
+            get {
+                return "https://opensource.org/licenses/MIT";
             }
         }
 

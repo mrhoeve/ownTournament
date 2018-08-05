@@ -68,5 +68,14 @@ namespace Korfbal.Localisation {
                 return ResourceManager.GetString("extensionName", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Korfbal.
+        /// </summary>
+        internal static string sport {
+            get {
+                return ResourceManager.GetString("sport", resourceCulture);
+            }
+        }
     }
 }

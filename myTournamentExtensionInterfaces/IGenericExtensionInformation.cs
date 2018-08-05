@@ -13,5 +13,6 @@ namespace myTournamentExtensionInterfaces
         string extensionDevelopers { get; }
         string appropriateLicenseShort { get; }
         string appropriateLicenseLong { get; }
+        string linkToLicense { get; }
     }
 }

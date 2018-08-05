@@ -42,7 +42,8 @@
   <ItemGroup>
     <Compile Include="IGenericExtensionInformation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SportExtension\ISportExtensionInformation.cs" />
+    <Compile Include="Sport\SportExtension\ISportExtensionInformation.cs" />
+    <Compile Include="Sport\ISport.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

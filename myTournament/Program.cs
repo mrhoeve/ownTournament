@@ -1,4 +1,5 @@
-﻿using System;
+﻿using myTournament.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +15,9 @@ namespace myTournament
         [STAThread]
         static void Main()
         {
+            // First load all the plugins
+            Plugins.LoadAllPlugins();
+            // Then start the application
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

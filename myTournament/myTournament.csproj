@@ -45,14 +45,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutForm\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Generic\SportExtension.cs" />
+    <Compile Include="Helpers\AboutFormHelper\AboutFormHelper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Helpers\AboutFormHelper\AboutFormHelper.Designer.cs">
+      <DependentUpon>AboutFormHelper.cs</DependentUpon>
+    </Compile>
     <Compile Include="Helpers\GenericPluginLoader.cs" />
-    <Compile Include="Helpers\LoadPlugins.cs" />
+    <Compile Include="Helpers\Plugins.cs" />
     <Compile Include="Localisation\strings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -60,8 +73,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutForm\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helpers\AboutFormHelper\AboutFormHelper.resx">
+      <DependentUpon>AboutFormHelper.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Localisation\strings.nl-NL.resx" />
     <EmbeddedResource Include="Localisation\strings.resx">

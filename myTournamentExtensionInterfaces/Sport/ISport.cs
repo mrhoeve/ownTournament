@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace myTournamentExtensionInterfaces.SportExtension
+namespace myTournamentExtensionInterfaces.Sport
 {
-    public interface ISportExtensionInformation : IGenericExtensionInformation
+    public interface ISport
     {
+        string Sport { get; }
     }
 }
