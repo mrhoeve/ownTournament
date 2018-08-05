@@ -8,3 +8,5 @@ Naamgeving voorbeelden: Generic.resx en Generic.nl.resx.
 GEEN strings in de klasses zelf, altijd via resources zodat vertaling mogelijk is.
 
 Plugin systeem: https://code.msdn.microsoft.com/windowsdesktop/Creating-a-simple-plugin-b6174b62
+
+Database versie systeem: http://dbup.readthedocs.io/en/latest/
